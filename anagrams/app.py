@@ -21,7 +21,7 @@ def words(word):
     words = []
     
     for w in wordss:
-        if sorted(w) == sorted(word):
+        if sorted(word.upper()) == sorted(w):
             words.append(w)
                
     return render_template('words.html', word_list=words)
